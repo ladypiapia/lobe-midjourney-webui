@@ -89,7 +89,13 @@ const Settings = memo(() => {
               placeholder={'your-midjourney-api-secret'}
               value={proxyAPISecret}
             />
-            
+            <Typography.Text type={'secondary'}>
+              <Trans i18nKey={'settings.MidjourneyAPIProxy.description'} ns={'common'}>
+                请参考
+                <Link href={'https://github.com/novicezk/midjourney-proxy'}>midjourney-proxy</Link>
+                部署好服务端
+              </Trans>
+            </Typography.Text>
           </Flexbox>
         </Flexbox>
       </Modal>
