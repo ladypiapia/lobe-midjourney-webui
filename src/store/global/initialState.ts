@@ -15,5 +15,7 @@ export interface SettingsState {
 export const initialState: SettingsState = {
   isSettingsModalOpen: false,
   language: 'auto',
-  settings: {},
+  settings: {
+    MIDJOURNEY_PROXY_URL: process.env.MIDJOURNEY_PROXY_URL || '',
+  },
 };
