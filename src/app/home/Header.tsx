@@ -1,6 +1,6 @@
 import { Midjourney } from '@lobehub/icons';
 import { ActionIcon, DiscordIcon } from '@lobehub/ui';
-import { Book, LucideGithub } from 'lucide-react';
+import { Heart } from 'lucide-react';
 import Link from 'next/link';
 import { memo } from 'react';
 import { useTranslation } from 'react-i18next';
@@ -15,14 +15,8 @@ const Header = memo(() => {
     <Flexbox align={'center'} horizontal justify={'space-between'}>
       <Midjourney.Combine size={32} />
       <Flexbox horizontal>
-        <Link href={DISCORD_URL} style={{ color: 'inherit' }} target={'_blank'}>
-          <ActionIcon icon={DiscordIcon} title={'Discord'} />
-        </Link>
-        <Link href={GITHUB_REPO} style={{ color: 'inherit' }} target={'_blank'} title={'Github'}>
-          <ActionIcon icon={LucideGithub} />
-        </Link>
         <Link href={MJ_DOCS} style={{ color: 'inherit' }} target={'_blank'} title={t('docs')}>
-          <ActionIcon icon={Book} />
+          <ActionIcon icon={Heart} />
         </Link>
         <Settings />
       </Flexbox>
