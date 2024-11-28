@@ -1,12 +1,12 @@
 import { Midjourney } from '@lobehub/icons';
-import { ActionIcon, DiscordIcon } from '@lobehub/ui';
+import { ActionIcon} from '@lobehub/ui';
 import { Heart } from 'lucide-react';
 import Link from 'next/link';
 import { memo } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Flexbox } from 'react-layout-kit';
 
-import { DISCORD_URL, GITHUB_REPO, MJ_DOCS } from '@/const/url';
+import { MJ_DOCS } from '@/const/url';
 import Settings from '@/features/Settings';
 
 const Header = memo(() => {
