@@ -15,17 +15,17 @@ const Home = memo(() => {
   const [useInitApp] = useMidjourneyStore((s) => [s.useInitApp]);
 
   useInitApp();
-
+  const isMobile = window.innerWidth <= 768; // 设定手机端的宽度阈值
   return (
     <Flexbox
       align={'center'}
       padding={16}
       style={{ background: theme.colorBgLayout, height: '100vh' }}
     >
-      <Flexbox gap={16} height={'100%'} style={{ maxWidth: 1152 }} width={'100%'}>
+      <Flexbox gap={isMobile ? 4 : 12} height={'100%'} style={{ maxWidth: 1152 }} width={'100%'}>
         <Header />
         <Flexbox
-          gap={5}
+          gap={isMobile ? 4 : 12} // 根据屏幕宽度调整间距
           height={'100%'}
           style={{ maxHeight: 'var(--vh)', overflow: 'hidden' }}
           width={'100%'}
