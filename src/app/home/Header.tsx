@@ -1,5 +1,5 @@
 import { Midjourney } from '@lobehub/icons';
-import { ActionIcon, DiscordIcon, Logo } from '@lobehub/ui';
+import { ActionIcon, DiscordIcon } from '@lobehub/ui';
 import { Book, LucideGithub } from 'lucide-react';
 import Link from 'next/link';
 import { memo } from 'react';
