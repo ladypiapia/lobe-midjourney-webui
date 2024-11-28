@@ -25,7 +25,7 @@ const Home = memo(() => {
       <Flexbox gap={isMobile ? 4 : 12} height={'100%'} style={{ maxWidth: 1152 }} width={'100%'}>
         <Header />
         <Flexbox
-          gap={isMobile ? 4 : 12} // 根据屏幕宽度调整间距
+          gap={isMobile ? 1 : 12} // 根据屏幕宽度调整间距
           height={'100%'}
           style={{ maxHeight: 'var(--vh)', overflow: 'hidden' }}
           width={'100%'}
