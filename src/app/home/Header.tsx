@@ -13,7 +13,7 @@ const Header = memo(() => {
   const { t } = useTranslation('common');
   return (
     <Flexbox align={'center'} horizontal justify={'space-between'}>
-      <Logo extra={<Midjourney.Combine size={32} />} type={'combine'} />
+      <Midjourney.Combine size={32} />
       <Flexbox horizontal>
         <Link href={DISCORD_URL} style={{ color: 'inherit' }} target={'_blank'}>
           <ActionIcon icon={DiscordIcon} title={'Discord'} />
