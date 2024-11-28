@@ -30,9 +30,25 @@ const Home = memo(() => {
           style={{ maxHeight: 'var(--vh)', overflow: 'hidden' }}
           width={'100%'}
         >
-          <PromptInput />
-          <ImagePreview />
-          <TaskList />
+          <style>
+            {`
+              @media (max-width: 768px) { // 手机端
+                .flex-gap {
+                  gap: 24px; // 手机端间距
+                }
+              }
+              @media (min-width: 769px) { // 电脑端
+                .flex-gap {
+                  gap: 8px; // 电脑端间距
+                }
+              }
+            `}
+          </style>
+          <Flexbox className="flex-gap">
+            <PromptInput />
+            <ImagePreview />
+            <TaskList />
+          </Flexbox>
         </Flexbox>
       </Flexbox>
     </Flexbox>
