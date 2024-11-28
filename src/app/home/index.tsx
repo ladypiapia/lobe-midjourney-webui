@@ -22,10 +22,10 @@ const Home = memo(() => {
       padding={16}
       style={{ background: theme.colorBgLayout, height: '100vh' }}
     >
-      <Flexbox gap={isMobile ? 4 : 12} height={'100%'} style={{ maxWidth: 1152 }} width={'100%'}>
+      <Flexbox gap={isMobile ? 12 : 1} height={'100%'} style={{ maxWidth: 1152 }} width={'100%'}>
         <Header />
         <Flexbox
-          gap={isMobile ? 1 : 12} // 根据屏幕宽度调整间距
+          gap={isMobile ? 12 : 1} // 根据屏幕宽度调整间距
           height={'100%'}
           style={{ maxHeight: 'var(--vh)', overflow: 'hidden' }}
           width={'100%'}
