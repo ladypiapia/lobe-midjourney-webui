@@ -27,7 +27,7 @@ const Home = memo(() => {
         <Flexbox
           gap={12}
           height={'100%'}
-          style={{ maxHeight: 'var(--vh)', overflow: 'hidden' }}
+          style={{ overflow: 'auto' }}
           width={'100%'}
         >
           <style>
