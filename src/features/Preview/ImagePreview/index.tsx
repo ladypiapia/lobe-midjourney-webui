@@ -62,7 +62,7 @@ const ImagePreview = memo<{ setLoaded: (loaded: boolean) => void }>(({ setLoaded
             className={styles.image}
             onLoad={() => setLoaded(true)}
             preview={{ onVisibleChange: setMask, visible: modal }}
-            src={currentTask.imageUrl}
+            src={currentTask.imageUrl.replace('https://cdn.discordapp.com', 'https://4.20a.top')}
             wrapperClassName={cx(
               styles.imageWrapper,
               currentTask.action === 'IMAGINE' && styles.imagine,
