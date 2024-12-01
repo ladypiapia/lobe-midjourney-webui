@@ -4,7 +4,7 @@
   "guide": {
     "step1": {
       "title": "绑定 Midjourney API 服务",
-      "description": "进入设置，填写 Midjourney API 代理地址"
+      "description": "进入设置，填写 Midjourney API 代理地址和Secret"
     },
     "step2": {
       "title": "开始出图",
@@ -35,7 +35,7 @@
       "apiSecret": {
         "title": "Midjourney API 代理 Secret"
       },
-      "description": "请参考 <1>midjourney-proxy</1> 部署好服务端后使用"
+      "description": "请参考 <1>midjourney-proxy</1> 获取Midjourney代理地址和Secret"
     },
     "modalTitle": "设置",
     "save": "保存"
