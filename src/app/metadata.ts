@@ -4,7 +4,7 @@ import { getServerConfig } from '@/config/server';
 
 import pkg from '../../package.json';
 
-const title = 'Lobe Midjourney WebUI';
+const title = '网鹅-Midjourney网页版';
 const { description, homepage } = pkg;
 
 const { METADATA_BASE_URL } = getServerConfig();
