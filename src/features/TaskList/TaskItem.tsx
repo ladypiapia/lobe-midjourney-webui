@@ -63,7 +63,7 @@ const TaskItem = memo<TaskItemProps>(({ id }) => {
           activeTask(id);
         }}
         preview={false}
-        src={task?.imageUrl}
+        src={task?.imageUrl.replace('https://cdn.discordapp.com', 'https://4.20a.top')}
       />
     </div>
   );
